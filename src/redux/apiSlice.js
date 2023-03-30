@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
+// http://localhost:5000/api/user/register
 export const apiSlice = createApi({
   reducerPath: "apiSlice",
+  // baseQuery: fetchBaseQuery({ baseUrl: "https://financial-management.onrender.com" }),
   baseQuery: fetchBaseQuery({ baseUrl: "https://financial-management.onrender.com" }),
   endpoints: (builder) => ({
     getCategories: builder.query({
